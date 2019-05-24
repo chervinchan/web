@@ -258,6 +258,7 @@ padding: 20px 0;
 .humble p {
 	font: 16px times, serif;
 	color: #777777;
+	width: 50%;
 }
 
 .startup {
