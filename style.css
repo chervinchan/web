@@ -137,15 +137,6 @@ padding: 20px 0;
 	cursor: pointer;
 }
 
-@media (max-width: 768px) {
-#home {
-	
-}
-#home .btn {
-
-}
-}
-
 #services {
 	margin-top: 120px;
 	background: #FFF;
@@ -247,22 +238,33 @@ padding: 20px 0;
 	object-fit: cover;
 }
 
+.left-right {
+	width: 45%;
+}
+.img-center {
+	width: 10%;
+	justify-content: center;
+}
 .humble {
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
+	width: 100%;
 }
+
 .humble h1 {
 	font: 18px arial, sans-serif;
 	font-weight: bold;
 	color: #222;
 }
-
 .humble p {
 	font: 16px times, serif;
 	color: #777777;
 }
 
+.startup {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
 .startup h1 {
 	font: 18px arial, sans-serif;
 	font-weight: bold;
@@ -273,6 +275,10 @@ padding: 20px 0;
 	color: #777777;
 }
 
+.dark-days {
+	display: flex;
+	width: 100%;
+}
 .dark-days h1 {
 	font: 18px arial, sans-serif;
 	font-weight: bold;
@@ -283,6 +289,11 @@ padding: 20px 0;
 	color: #777777;
 }
 
+.triumph {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
 .triumph h1 {
 	font: 18px arial, sans-serif;
 	font-weight: bold;
@@ -411,16 +422,18 @@ padding: 20px 0;
 
 .work-area {
 	display: flex;
-	justify-content: space-around;
+	width: 100%;
+	justify-content: space-evenly;
 	margin-top: 80px;
 }
 .input {
-	width: 50%;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
 }
 input {
 	margin-bottom: 30px;
 	height: 50px;
-	width: 450px;
 	border-radius: 5px;
 	border: none;
 }
@@ -433,14 +446,14 @@ input {
 	padding-left: 20px;
 }
 input:last-child{
-	margin: auto;
+	margin-bottom: auto;
 }
 
 textarea {
 	resize: none;
 	border: none;
 	border-radius: 5px;
-	width: 450px;
+	width: 40%;
 	height: 210px;
 	color: #777777;
 	font-family: Arial, Helvetica, sans-serif;
@@ -467,9 +480,6 @@ textarea ::placeholder {
 	cursor: pointer;
 	margin-bottom: 110px;
 }
-@media (max-width: 768px){
-
-}
 
 #bottom-folder {
 	display: flex;
@@ -478,10 +488,17 @@ textarea ::placeholder {
 }
 
 .footer {
-	justify-content: flex-start;
+	width: 40%;
+	padding-left: 70px;
+	align-self: center;
+	font: 14px arial, serif;
+	color: #777777;
+
 }
+
 .link-icons {
-	justify-content: center;
+	width: 20%;
+	align-self: center;
 	text-align: center;
 	color: #ffffff;
 }
